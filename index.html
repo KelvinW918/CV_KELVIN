@@ -5,58 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Kelvin</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Kelvin Williams</h1>
+        <h1>Kelvin</h1>
         <p>Ingeniería en Sistemas</p>
     </header>
 
-    <section id="informacion-personal">
+    <section id="informacion-personal" class="seccion-elevacion">
         <h2>Información Personal</h2>
-        <p>Correo electrónico: kelvinarturow@gmail.com</p>
-        <p>Teléfono: +584140393662</p>
-        <p>LinkedIn: https://www.linkedin.com/in/kelvin-williams-5889ba344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</p>
-        <p>Ubicación: Calle Cedeño, Sector Las Brisas, Casa n°10-b, Magdaleno, Edo. Aragua, Venezuela</p>
+        <p><i class="fas fa-envelope icono"></i> kelvinarturow@gmail.com</p>
+        <p><i class="fas fa-phone icono"></i> +584140393662</p>
+        <p><i class="fab fa-linkedin icono"></i> <a href="https://www.linkedin.com/in/kelvin-williams-5889ba344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+        <p><i class="fas fa-map-marker-alt icono"></i> Calle Cedeño, Sector Las Brisas, Casa n°10-b, Magdaleno, Edo. Aragua, Venezuela</p>
     </section>
 
-    <section id="acerca-de-mi">
+    <section id="acerca-de-mi" class="seccion-elevacion">
         <h2>Acerca de mí</h2>
         <p>Estudiante del 9no semestre de Ingeniería en Sistemas, apasionado por la tecnología y la resolución de problemas.</p>
-        <p>Atleta de alto rendimiento, formando parte de la pre-selección nacional en atletismo. </p>
-        <p>Voluntario del Servicio Social de Iglesias</p>
+        <p>Atleta de alto rendimiento, formando parte de la pre-selección nacional en atletismo.</p>
+        <p>Voluntario del Servicio Social de Iglesias.</p>
         <p>Voluntario de la organización sin fines de lucros Corazón del Padre.</p>
     </section>
-    
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <article>
-            <h3>Aplicación web para Clínica Médica El Bosque</h3>
-            <p>Desarrollé un sistema de gestión de citas, administración de la clínica, con 3 perfiles de inicio de sesión: Cliente, Médico y Admin. La Web tiene la capacidad de emitir cotizaciones de los servicios en pdf y de llevar un control y seguimiento del paciente mediante un historial clínico </p>
-            <p>Tecnologías utilizadas: Python, Javascript, Html, CSS Y Django.</p>
-        </article>
-        <article>
-            <h3>Sistema de Inventario para Servicio Social de Iglesias</h3>
-            <p>Desarrollé un CRUD para el control de ingresos y salidas de medicamentos</p>
-            <p>Tecnologías utilizadas: Python y Django</p>
-        </article>
-        <article>
-            <h3>Sistema de Inventario para Centro Cristiano de Restauración Familiar Jehová Justicia Nuestra</h3>
-            <p>Desarrollé un CRUD para el control de utensilios y equipos de la iglesia.</p>
-            <p>Tecnologías utilizadas: Python y Tkinter</p>
-        </article>
-    </section>
 
-    <section id="experiencia">
+    <div class="terminal">
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <pre><span id="terminal-text-proyectos"></span><span class="cursor"></span></pre>
+        </section>
+    </div>
+
+    <section id="experiencia" class="seccion-elevacion">
         <h2>Experiencia</h2>
         <article>
-            <h3>Asistente de Ingeniero de Sistemas en Inversiones Tornillos Serrano </h3>
-            <p>Cumplía funciones de soporte técnico a los equipos y también me desempeñé en el cargo de Community Manager. </p>
-            <p>2021-2022</p>
+            <h3>Asistente de Ingeniero de Sistemas en Inversiones Tornillos Serrano</h3>
+            <p>Cumplía funciones de soporte técnico a los equipos y también me desempeñé en el cargo de Community Manager.</p>
+            <p>2021/2022</p>
         </article>
     </section>
 
-    <section id="capacitacion">
+    <section id="capacitacion" class="seccion-elevacion">
         <h2>Capacitación</h2>
         <article>
             <h3>Fundamentos de Marketing Dígital: Google Activate</h3>
@@ -88,7 +77,7 @@
         </article>
     </section>
 
-    <section id="habilidades">
+    <section id="habilidades" class="seccion-elevacion">
         <h2>Habilidades</h2>
         <ul>
             <li>Liderazgo</li>
@@ -100,8 +89,44 @@
         </ul>
     </section>
 
-    <footer>
-        <a href="cv.pdf" download>Descargar CV</a>
-    </footer>
+    <section id="descargar-cv" class="seccion-elevacion">
+        <footer>
+            <a href="cv.pdf" download>Descargar CV</a>
+        </footer>
+    </section>
+
+    <script>
+        const terminalTextProyectos = document.getElementById('terminal-text-proyectos');
+        const proyectosTexto = `
+        kelvin@cv:~$ Proyectos
+        Aplicación web para Clínica Médica El Bosque
+        Desarrollé un sistema de gestión de citas, administración de la clínica
+        con 3 perfiles de inicio de sesión: Cliente, Médico y Admin. 
+        La Web tiene la capacidad de emitir cotizaciones de los servicios en pdf y de llevar un control 
+        y seguimiento del paciente mediante un historial clínico.
+        Tecnologías utilizadas: Python, Javascript, Html, CSS Y Django.
+
+        Sistema de Inventario para Servicio Social de Iglesias
+        Desarrollé un CRUD para el control de ingresos y salidas de medicamentos.
+        Tecnologías utilizadas: Python y Django.
+
+        Sistema de Inventario para Centro Cristiano de Restauración Familiar Jehová Justicia Nuestra
+        Desarrollé un CRUD para el control de utensilios y equipos de la iglesia.
+        Tecnologías utilizadas: Python y Tkinter.
+        `;
+
+        let i = 0;
+        const velocidad = 20;
+
+        function escribirProyectos() {
+            if (i < proyectosTexto.length) {
+                terminalTextProyectos.innerHTML += proyectosTexto.charAt(i);
+                i++;
+                setTimeout(escribirProyectos, velocidad);
+            }
+        }
+
+        escribirProyectos();
+    </script>
 </body>
 </html>
