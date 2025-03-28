@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+header {
+    background-color: #007bff; /* Azul para el encabezado */
+    color: #fff; /* Texto blanco en el encabezado */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em; /* Tamaño del subtítulo */
+}
+
+section {
+    background-color: #fff; /* Fondo blanco para las secciones */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    color: #007bff; /* Azul para los encabezados de sección */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+}
+
+#proyectos article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos article h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+#proyectos article p {
+    margin-bottom: 10px;
+}
+
+/* Estilos adicionales para mejorar la legibilidad */
+p {
+    line-height: 1.6;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
